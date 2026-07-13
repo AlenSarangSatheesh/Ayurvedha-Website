@@ -225,7 +225,16 @@ a.topbar__link:hover{color:var(--cream-2)}
 .hero__ornament{position:absolute;right:-20px;bottom:-20px;width:min(38vw,360px);z-index:-1;
   color:var(--gold);opacity:.28}
 @media (max-width:940px){.hero__ornament{opacity:.16;width:60vw}.hero__scroll{display:none}}
-@media (max-width:700px){.hero{align-items:flex-start}}
+/* Mobile: solid, in-flow header bar (no overlay) so it can never overlap hero content */
+@media (max-width:700px){
+  .pagetop{position:static;background:var(--emerald-900)}
+  .hero{padding-top:0;align-items:flex-start}
+  .header.is-stuck{position:static;background:transparent;box-shadow:none;border-bottom-color:transparent}
+  .header.is-stuck .brand__name{color:var(--cream-2)}
+  .header.is-stuck .brand__mark{color:var(--gold-200)}
+  .header.is-stuck .brand__tag{color:var(--gold-700)}
+  .header.is-stuck .nav__toggle{color:var(--cream-2)}
+}
 
 /* ============================================================
    USP STRIP (overlaps hero)
