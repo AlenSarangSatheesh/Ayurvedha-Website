@@ -1,0 +1,8 @@
+# Local reference material — not part of the website (third-party screenshots/posters)
+2aad47e9cd58d6bbd0d59db8d21b6833.jpg
+f199ca7d5d1db10a11ab765e32666eaf.jpg
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
