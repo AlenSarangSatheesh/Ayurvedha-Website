@@ -14,6 +14,7 @@
   function init() {
     year();
     stickyHeader();
+    headerClearance();
     mobileMenu();
     reveal();
     accordions();
@@ -62,6 +63,26 @@
     var apply = function (y) { header.classList.toggle('is-stuck', y > threshold - 2); };
     bindScroll(apply);
     apply(window.scrollY || 0);
+  }
+
+  /* reserve exact top clearance so the absolute topbar+header never overlaps hero content */
+  function headerClearance() {
+    var header = $('#header'), topbar = $('.topbar');
+    if (!header) return;
+    var set = function () {
+      var h = (topbar ? topbar.offsetHeight : 0) + header.offsetHeight + 8;
+      document.documentElement.style.setProperty('--pagetop-h', h + 'px');
+    };
+    set();
+    window.addEventListener('resize', set);
+    window.addEventListener('load', set);
+    if (window.ResizeObserver) {
+      try {
+        var ro = new ResizeObserver(set);
+        ro.observe(header);
+        if (topbar) ro.observe(topbar);
+      } catch (e) {}
+    }
   }
 
   /* ---------- mobile menu (focus-trapped) ---------- */

@@ -195,7 +195,7 @@ a.topbar__link:hover{color:var(--cream-2)}
    ============================================================ */
 .hero{position:relative;min-height:min(92vh,880px);display:flex;align-items:center;
   color:var(--on-dark);overflow:hidden;isolation:isolate;
-  margin-top:-1px}
+  padding-top:var(--pagetop-h,7rem);margin-top:-1px}
 .hero__media{position:absolute;inset:0;z-index:-2}
 .hero__media img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
 .hero__veil{position:absolute;inset:0;
@@ -205,7 +205,7 @@ a.topbar__link:hover{color:var(--cream-2)}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background-image:var(--grain);
   background-size:150px;opacity:.4;mix-blend-mode:overlay;pointer-events:none}
 
-.hero__inner{padding-block:clamp(4rem,10vw,6rem)}
+.hero__inner{padding-block:clamp(1.5rem,5vw,3.5rem)}
 .hero__content{max-width:660px}
 .hero__title{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;
   font-size:clamp(2.5rem,6.4vw,4.7rem);line-height:1.02;margin-bottom:1.4rem;text-wrap:balance}
@@ -225,6 +225,7 @@ a.topbar__link:hover{color:var(--cream-2)}
 .hero__ornament{position:absolute;right:-20px;bottom:-20px;width:min(38vw,360px);z-index:-1;
   color:var(--gold);opacity:.28}
 @media (max-width:940px){.hero__ornament{opacity:.16;width:60vw}.hero__scroll{display:none}}
+@media (max-width:700px){.hero{align-items:flex-start}}
 
 /* ============================================================
    USP STRIP (overlaps hero)
