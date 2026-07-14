@@ -13,12 +13,51 @@
   <meta property="og:description" content="Authentic, physician-led Kerala Panchakarma and Ayurvedic therapies, personalised after consultation for deep rest, detox and rejuvenation." />
   <meta property="og:image" content="assets/img/hero.jpg" />
 
+  <!-- Local business structured data (helps local search / Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalBusiness", "HealthAndBeautyBusiness"],
+    "name": "Unni Kerala Kalari Varma Vaidhya Salai",
+    "alternateName": "Kerala Kalari Varma Vaidhya Salai",
+    "description": "Physician-led Ayurveda, Kalari and Varma (Marma) treatment centre in Coimbatore. Panchakarma, Shirodhara, Kizhi, Vasti, Uzhichil and more, personalised after consultation.",
+    "image": "https://alensarangsatheesh.github.io/Ayurvedha-Website/assets/img/hero.jpg",
+    "logo": "https://alensarangsatheesh.github.io/Ayurvedha-Website/assets/img/logo.svg",
+    "url": "https://alensarangsatheesh.github.io/Ayurvedha-Website/",
+    "telephone": "+918075896213",
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vimal Jothi Nagar, 6th Street, Viswapuram, Saravanampatti",
+      "addressLocality": "Coimbatore",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "641035",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "13:00" }
+    ],
+    "medicalSpecialty": "Ayurveda",
+    "availableService": [
+      { "@type": "MedicalTherapy", "name": "Abhyanga" },
+      { "@type": "MedicalTherapy", "name": "Shirodhara" },
+      { "@type": "MedicalTherapy", "name": "Panchakarma" },
+      { "@type": "MedicalTherapy", "name": "Kizhi" },
+      { "@type": "MedicalTherapy", "name": "Vasti" },
+      { "@type": "MedicalTherapy", "name": "Swedana (Steam Bath)" },
+      { "@type": "MedicalTherapy", "name": "Uzhichil" }
+    ],
+    "areaServed": "Coimbatore"
+  }
+  </script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=3" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -746,6 +785,11 @@
       <header class="section__head reveal">
         <span class="eyebrow"><span class="eyebrow__rule"></span> In Their Words</span>
         <h2 class="section__title">What our guests say</h2>
+        <a class="grating" href="https://www.google.com/maps/search/?api=1&amp;query=Unni+Kerala+Kalari+Varma+Vaidhya+Salai+Saravanampatti+Coimbatore" target="_blank" rel="noopener" aria-label="Rated 4.9 out of 5 from 31 Google reviews — read reviews on Google">
+          <span class="grating__stars" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></span>
+          <span class="grating__score"><strong>4.9</strong> · 31 Google reviews</span>
+          <span class="grating__cta">Read &amp; review on Google →</span>
+        </a>
       </header>
 
       <div class="quotes reveal" data-carousel>
@@ -870,14 +914,20 @@
         <h2 class="section__title section__title--light">Begin your treatment with a conversation</h2>
         <p class="contact__lede">The easiest way to book is on WhatsApp. Tap the button and a message is ready to send — we'll confirm your appointment and answer any questions before your visit.</p>
 
-        <a href="https://wa.me/918075896213?text=Hey%20I%20need%20an%20appointment" target="_blank" rel="noopener" class="btn btn--wa btn--xl contact__wa">
-          <svg class="ic"><use href="#i-whatsapp"/></svg>
-          <span>Message us on WhatsApp</span>
-        </a>
+        <div class="contact__actions">
+          <a href="https://wa.me/918075896213?text=Hey%20I%20need%20an%20appointment" target="_blank" rel="noopener" class="btn btn--wa btn--xl contact__wa">
+            <svg class="ic"><use href="#i-whatsapp"/></svg>
+            <span>Message us on WhatsApp</span>
+          </a>
+          <a href="tel:+918075896213" class="btn btn--gold btn--xl contact__call">
+            <svg class="ic"><use href="#i-phone"/></svg>
+            <span>Call now</span>
+          </a>
+        </div>
 
         <ul class="contact__list">
           <li><span class="contact__ic"><svg class="ic"><use href="#i-phone"/></svg></span><div><span class="contact__k">Call / WhatsApp</span><a href="tel:+918075896213">+91 80758 96213</a></div></li>
-          <li><span class="contact__ic"><svg class="ic"><use href="#i-pin"/></svg></span><div><span class="contact__k">Visit</span><span>Kerala Kalari Varma Vaidhya Salai, Vimal Jothi Nagar, 6th Street, Viswapuram, Saravanampatti, Coimbatore, Tamil Nadu</span></div></li>
+          <li><span class="contact__ic"><svg class="ic"><use href="#i-pin"/></svg></span><div><span class="contact__k">Visit</span><span>Kerala Kalari Varma Vaidhya Salai, Vimal Jothi Nagar, 6th Street, Viswapuram, Saravanampatti, Coimbatore, Tamil Nadu – 641035 <a class="contact__dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=Unni+Kerala+Kalari+Varma+Vaidhya+Salai+Saravanampatti+Coimbatore" target="_blank" rel="noopener">Get directions →</a></span></div></li>
           <li><span class="contact__ic"><svg class="ic"><use href="#i-clock"/></svg></span><div><span class="contact__k">Hours</span><span>Mon–Sat · 8:00am–7:00pm &nbsp;·&nbsp; Sun · 9:00am–1:00pm</span></div></li>
         </ul>
       </div>
@@ -931,6 +981,13 @@
         </form>
       </div>
     </div>
+
+    <div class="container">
+      <div class="contact__map reveal">
+        <iframe title="Map to Kerala Kalari Varma Vaidhya Salai, Coimbatore" src="https://maps.google.com/maps?q=Unni%20Kerala%20Kalari%20Varma%20Vaidhya%20Salai%2C%20Vimal%20Jothi%20Nagar%2C%20Saravanampatti%2C%20Coimbatore%20641035&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="btn btn--gold contact__map-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Unni+Kerala+Kalari+Varma+Vaidhya+Salai+Saravanampatti+Coimbatore" target="_blank" rel="noopener"><svg class="ic"><use href="#i-pin"/></svg> Get Directions</a>
+      </div>
+    </div>
   </section>
 
 </main>
@@ -971,7 +1028,7 @@
 
     <div class="footer__col footer__contact">
       <h4>Visit &amp; contact</h4>
-      <p><svg class="ic"><use href="#i-pin"/></svg> Vimal Jothi Nagar, Saravanampatti, Coimbatore, Tamil Nadu</p>
+      <p><svg class="ic"><use href="#i-pin"/></svg> Vimal Jothi Nagar, Saravanampatti, Coimbatore, Tamil Nadu – 641035</p>
       <p><svg class="ic"><use href="#i-phone"/></svg> <a href="tel:+918075896213">+91 80758 96213</a></p>
       <p><svg class="ic"><use href="#i-clock"/></svg> Mon–Sat · 8am–7pm</p>
     </div>
@@ -1002,6 +1059,6 @@
 
 <button class="to-top" id="toTop" aria-label="Back to top" hidden><svg class="ic"><use href="#i-arrow-up"/></svg></button>
 
-<script src="assets/js/main.js?v=3" defer></script>
+<script src="assets/js/main.js?v=4" defer></script>
 </body>
 </html>
