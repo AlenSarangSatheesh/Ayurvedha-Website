@@ -1,9 +1,9 @@
-# Ojas Ayurveda — Treatment Centre Website
+# Kerala Kalari Varma Vaidhya Salai — Treatment Centre Website
 
 A premium, single-page website for an Ayurveda treatment centre. Hand-built, unique design
 (emerald + antique gold + ivory), authentic Kerala-Panchakarma content, and **WhatsApp-first booking**.
 
-> **"Ojas Ayurveda", the address, hours, email and the stat numbers are placeholders.**
+> **The hours and the stat numbers are still placeholders** (email was removed — add yours if you want one).
 > Replace them with your real details before publishing (see *Customise* below).
 
 ---
@@ -72,7 +72,7 @@ line **plus** the visitor's name, phone, chosen therapy and note — no backend 
 
 | What | Where |
 |------|-------|
-| **Brand name** ("Ojas Ayurveda") | `index.html` — header, hero, footer, `<title>`/meta. Two other name ideas: *Rasayana Ayurveda*, *Dhatri Ayurveda*. |
+| **Brand name** ("Kerala Kalari Varma Vaidhya Salai") | `index.html` — header/footer wordmark, `<title>`/meta, copyright. |
 | **Physician name** (Dr. Anand Nampoothiri) | `index.html` — hero, about signature |
 | **Address / hours / email** | `index.html` — Contact section (`.contact__list`) and footer (`.footer__contact`) |
 | **Stat numbers** (15+, 25+, 4, 5,000+) | `index.html` — `.stats` section, `data-count` attributes. Confirm with your real figures. |
