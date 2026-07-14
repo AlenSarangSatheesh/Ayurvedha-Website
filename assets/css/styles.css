@@ -547,7 +547,7 @@ a.topbar__link:hover{color:var(--cream-2)}
 
 .contact__formwrap{background:var(--cream-2);border-radius:var(--radius-lg);padding:clamp(1.5rem,3vw,2.4rem);
   box-shadow:var(--shadow-lg);border:1px solid var(--sand-2);color:var(--ink)}
-.cform__title{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--emerald-800)}
+.cform__title{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--emerald-800);margin-bottom:1.4rem}
 .cform__sub{font-size:.9rem;color:var(--ink-mute);margin-top:.3rem;margin-bottom:1.4rem}
 .cform__row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .field{margin-bottom:1.1rem;display:flex;flex-direction:column}
